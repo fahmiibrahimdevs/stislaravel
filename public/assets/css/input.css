@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700,800");
+@import "tailwindcss/theme";
+
+@layer components {
+  @import "./bootstrap_full.css";
+  @import "./style.css";
+  @import "./components.css";
+}
+
+@import "tailwindcss/utilities";
+
+/* Resolve conflict between Bootstrap's .collapse and Tailwind's .collapse utility */
+.collapse {
+  visibility: visible !important;
+}

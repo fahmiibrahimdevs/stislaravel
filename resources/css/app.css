@@ -1,0 +1,114 @@
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700,800");
+
+@theme {
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html,
+body {
+    font-family: var(--font-sans);
+}
+
+@layer components {
+    .main-content {
+        @apply px-0;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+
+    .hide-scrollbar {
+        scrollbar-width: none; /* Untuk Firefox */
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+        display: none; /* Untuk Chrome, Safari, dan Edge */
+    }
+
+    .navbar.navbar-expand-lg.main-navbar {
+        @apply !px-0 lg:!px-5;
+    }
+
+    @media (max-width: 575.98px) {
+        .modal-dialog {
+            @apply !m-0 !w-full !max-w-full;
+        }
+
+        .modal-content {
+            @apply !rounded-none !border-0;
+        }
+    }
+
+    .modal-header,
+    .modal-body {
+        @apply !px-4 lg:!px-6;
+    }
+}
+
+/* Resolve conflict between Bootstrap's .collapse and Tailwind's .collapse utility */
+.collapse {
+    visibility: visible !important;
+}
+.fb-table-wrapper.fb-table-dark .fb-table thead th {
+    background-color: #374151 !important;
+    color: #d1d5db !important;
+    border-bottom-color: #4b5563 !important;
+}
+
+.fb-table-wrapper.fb-table-dark .fb-table tbody tr {
+    background-color: #1f2937 !important;
+    border-bottom-color: #374151 !important;
+}
+
+.fb-table-wrapper.fb-table-dark .fb-table tbody tr:hover {
+    background-color: #374151 !important;
+}
+
+.fb-table-wrapper.fb-table-dark .fb-table tbody td {
+    color: #e5e7eb !important;
+}
+
+.fb-table-wrapper.fb-table-dark .fb-table tbody td.fb-td-bold {
+    color: #f9fafb !important;
+}
+
+/* ---- Flowbite Badge Pills ---- */
+.fb-badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    padding: 2px 10px !important;
+    border-radius: 9999px !important;
+    font-size: 0.75rem !important;
+    font-weight: 500 !important;
+    line-height: 1.5 !important;
+}
+
+.fb-badge-success {
+    background-color: #dcfce7 !important;
+    color: #166534 !important;
+}
+
+.fb-badge-danger {
+    background-color: #fee2e2 !important;
+    color: #991b1b !important;
+}
+
+.fb-badge-warning {
+    background-color: #fef9c3 !important;
+    color: #854d0e !important;
+}
+
+.fb-badge-info {
+    background-color: #dbeafe !important;
+    color: #1e40af !important;
+}
+
+.fb-badge-primary {
+    background-color: #e0e7ff !important;
+    color: #3730a3 !important;
+}
