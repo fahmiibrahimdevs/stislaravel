@@ -1,15 +1,14 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Weather Icon</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="Weather Icon">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Modules</a></div>
               <div class="breadcrumb-item">Weather Icon</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">Weather Icon</h2>
             <p class="section-lead">
               We also added 'Weather Icons' to make it easier for you to display weather icons. This library was created by @erikflowers
@@ -17,12 +16,8 @@
 
             <div class="row">
               <div class="col-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Weather Icons</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="row new-icons">
+                <x-stisla.card title="Weather Icons">
+<div class="row new-icons">
                     <div class="col-sm-12">
                       <div class="section-title mt-0">25 New 2.0 Icons!</div>
                       <div class="row">
@@ -759,12 +754,9 @@
                     </div>
                     <div class="col-sm-12 icon-set">
                       <div class="section-title">Moon Phases</div>
-                      <div class="alert alert-primary alert-has-icon">
-                      <div class="alert-icon"><i class="fa fa-info-circle"></i></div>
-                      <div class="alert-body">
-                        <p>The moons are split into 28 icons, to correspond neatly with the 28 day moon cycle. There is a primary set and alternate set. The primary set is meant to be interpreted as: where there are pixels, that is the illuminated part of the moon. The alternate set is meant to be interpreted as: where there are pixels, that is the shadowed part of the moon.</p>
-                      </div>
-                      </div>
+                      <x-stisla.alert type="primary" icon="fa fa-info-circle">
+<p>The moons are split into 28 icons, to correspond neatly with the 28 day moon cycle. There is a primary set and alternate set. The primary set is meant to be interpreted as: where there are pixels, that is the illuminated part of the moon. The alternate set is meant to be interpreted as: where there are pixels, that is the shadowed part of the moon.</p>
+</x-stisla.alert>
                       <div class="row">
                       <div class="icon-wrap">
                         <div class="icon">&#xf095;</div>
@@ -1160,18 +1152,15 @@
                     </div>
                     <div class="col-sm-12 icon-set">
                       <div class="section-title">Wind Degree Examples</div>
-                      <div class="alert alert-primary alert-has-icon">
-                      <div class="alert-icon"><i class="fa fa-info-circle"></i></div>
-                      <div class="alert-body">
-                        <p>The classes for the wind direction indicator is split into 2 options. You can choose towards or from. Towards points to the degree, zero at the top. From points directly away from the degree. This means, if you want the indicator to represent "wind is coming from the south", you can use the <code>towards-0-deg</code> class, or if you prefer to use from, then you would use <code>from-180-deg</code>.</p>
+                      <x-stisla.alert type="primary" icon="fa fa-info-circle">
+<p>The classes for the wind direction indicator is split into 2 options. You can choose towards or from. Towards points to the degree, zero at the top. From points directly away from the degree. This means, if you want the indicator to represent "wind is coming from the south", you can use the <code>towards-0-deg</code> class, or if you prefer to use from, then you would use <code>from-180-deg</code>.</p>
                         <p>There are 360 classes for each in 1 degree increments for maximum precision.</p>
                         <p></p>
                         <p>To make a wind icon appear, you need to add 3 classes, the base icon class, the wind icon class, and then the direction you want it to face: <code>class="wi wi-wind towards-23-deg"</code></p>
 
                         <p></p>
                         <p>NOTE: You must include the additional stylesheeet, <code>weather-icons-wind.css</code> to use the wind icons and API mappings.</p>
-                      </div>
-                      </div>
+</x-stisla.alert>
                       <div class="row">
                       <div class="icon-wrap"><div class="icon"><i class="wi wi-wind towards-0-deg"></i>
                       </div>
@@ -1337,17 +1326,14 @@
                     </div>
                     <div class="col-sm-12 icon-set">
                       <div class="section-title">Wind Cardinal Examples</div>
-                      <div class="alert alert-primary alert-has-icon">
-                      <div class="alert-icon"><i class="fa fa-info-circle"></i></div>
-                      <div class="alert-body">
-                        <p>The classes for the cardinal wind direction indicator is split into 2 options. You can choose towards or from. Towards points to the direction in the class, north at the top. From points directly away from the direction in the class. This means, if you want the indicator to represent "wind is coming from the south", you can use the <code>towards-n</code> class, or if you prefer to use from, then you would use <code>from-s</code>.</p>
+                      <x-stisla.alert type="primary" icon="fa fa-info-circle">
+<p>The classes for the cardinal wind direction indicator is split into 2 options. You can choose towards or from. Towards points to the direction in the class, north at the top. From points directly away from the direction in the class. This means, if you want the indicator to represent "wind is coming from the south", you can use the <code>towards-n</code> class, or if you prefer to use from, then you would use <code>from-s</code>.</p>
                         <p>The purpose of this is to accommodate applications that prefer to point to where the wind is originating from (arrow points against the wind), or pointing where the wind is blowing (arrow points in direction of wind). You can decide which fits your application best and use the class that matches.</p>
                         <p>There are 16 classes each for precision when using cardinal directions.</p>
                         <p></p>
                         <p>To make a wind icon appear, you need to add 3 classes, the base icon class, the wind icon class, and then the direction you want it to face: <code>class="wi wi-wind wi-from-e"</code></p>
                         <p>NOTE: You must include the additional stylesheeet, <code>weather-icons-wind.css</code> to use the wind icons and API mappings.</p>
-                      </div>
-                      </div>
+</x-stisla.alert>
                       <div class="row">
                       <div class="icon-wrap"><div class="icon"><i class="wi wi-wind wi-towards-n"></i>
                       </div>
@@ -1582,8 +1568,7 @@
                       </div>
                     </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
           </div>

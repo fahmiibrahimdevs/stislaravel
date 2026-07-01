@@ -1,15 +1,14 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>User</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="User">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Components</a></div>
               <div class="breadcrumb-item">User</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">Users</h2>
             <p class="section-lead">Components relating to users, lists of users and so on.</p>
 
@@ -231,12 +230,8 @@
             </div>
             <div class="row">
               <div class="col-12 col-sm-12 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Comments</h4>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-unstyled list-unstyled-border list-unstyled-noborder">
+                <x-stisla.card title="Comments">
+<ul class="list-unstyled list-unstyled-border list-unstyled-noborder">
                       <li class="media">
                         <img alt="image" class="mr-3 rounded-circle" width="70" src="../assets/img/avatar/avatar-1.png">
                         <div class="media-body">
@@ -292,16 +287,11 @@
                         </div>
                       </li>
                     </ul>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
               <div class="col-12 col-sm-12 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>User Progress</h4>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-unstyled user-progress list-unstyled-border list-unstyled-noborder">
+                <x-stisla.card title="User Progress">
+<ul class="list-unstyled user-progress list-unstyled-border list-unstyled-noborder">
                       <li class="media">
                         <img alt="image" class="mr-3 rounded-circle" width="50" src="../assets/img/avatar/avatar-1.png">
                         <div class="media-body">
@@ -351,8 +341,7 @@
                         </div>
                       </li>
                     </ul>
-                  </div>
-                </div>
+</x-stisla.card>
 
                 <div class="card mt-4">
                   <div class="card-header">

@@ -1,14 +1,13 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Credits</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="Credits">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item">Credits</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">Thanks To ...</h2>
             <p class="section-lead">
               We would like to thank the makers of these cool plugins and images.
@@ -16,12 +15,8 @@
 
             <div class="row">
               <div class="col-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Credits</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="list-unstyled list-unstyled-border mt-4">
+                <x-stisla.card title="Credits">
+<div class="list-unstyled list-unstyled-border mt-4">
                       <div class="media">
                         <div class="media-icon"><i class="far fa-circle"></i></div>
                         <div class="media-body">
@@ -282,8 +277,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
           </div>

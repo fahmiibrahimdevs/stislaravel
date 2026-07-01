@@ -1,26 +1,21 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Editor</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="Editor">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Forms</a></div>
               <div class="breadcrumb-item">Editor</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">Editor</h2>
             <p class="section-lead">WYSIWYG editor and code editor.</p>
 
             <div class="row">
               <div class="col-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Simple Summernote</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group row mb-4">
+                <x-stisla.card title="Simple Summernote">
+<div class="form-group row mb-4">
                       <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Title</label>
                       <div class="col-sm-12 col-md-7">
                         <input type="text" class="form-control">
@@ -48,19 +43,14 @@
                         <button class="btn btn-primary">Publish</button>
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
 
             <div class="row">
               <div class="col-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Full Summernote</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group row mb-4">
+                <x-stisla.card title="Full Summernote">
+<div class="form-group row mb-4">
                       <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Title</label>
                       <div class="col-sm-12 col-md-7">
                         <input type="text" class="form-control">
@@ -88,19 +78,14 @@
                         <button class="btn btn-primary">Publish</button>
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
 
             <div class="row">
               <div class="col-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Code Editor</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group row mb-4">
+                <x-stisla.card title="Code Editor">
+<div class="form-group row mb-4">
                       <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Files</label>
                       <div class="col-sm-12 col-md-7">
                         <select class="form-control selectric">
@@ -125,8 +110,7 @@ setTimeout(function() {
                         <button class="btn btn-primary">Save Changes</button>
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
           </div>

@@ -1,41 +1,31 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Owl Carousel</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="Owl Carousel">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Modules</a></div>
               <div class="breadcrumb-item">Owl Carousel</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">Owl Carousel</h2>
             <p class="section-lead">Display multiple images alternately within a few seconds.</p>
 
             <div class="row">
               <div class="col-12 col-sm-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Sliders</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="owl-carousel owl-theme slider" id="slider1">
+                <x-stisla.card title="Sliders">
+<div class="owl-carousel owl-theme slider" id="slider1">
                       <div><img alt="image" src="../assets/img/news/img01.jpg"></div>
                       <div><img alt="image" src="../assets/img/news/img08.jpg"></div>
                       <div><img alt="image" src="../assets/img/news/img10.jpg"></div>
                       <div><img alt="image" src="../assets/img/news/img09.jpg"></div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
               <div class="col-12 col-sm-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Sliders (Caption)</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="owl-carousel owl-theme slider" id="slider2">
+                <x-stisla.card title="Sliders (Caption)">
+<div class="owl-carousel owl-theme slider" id="slider2">
                       <div><img alt="image" src="../assets/img/news/img01.jpg">
                         <div class="slider-caption">
                           <div class="slider-title">Image 1</div>
@@ -65,8 +55,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
           </div>

@@ -1,14 +1,13 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Invoice</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="Invoice">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item">Invoice</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <div class="invoice">
               <div class="invoice-print">
                 <div class="row">

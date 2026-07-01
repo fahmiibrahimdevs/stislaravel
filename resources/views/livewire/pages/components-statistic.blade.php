@@ -1,29 +1,33 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Statistic</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="Statistic">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Components</a></div>
               <div class="breadcrumb-item">Statistic</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">Statistics</h2>
             <p class="section-lead">The chat component and is equipped with a JavaScript API, making it easy for you to integrate with Back-end.</p>
 
             <div class="row">
               <div class="col-12 col-sm-12 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
+                <x-stisla.card>
+<x-slot name="header">
+
                     <h4>Summary</h4>
                     <div class="card-header-action">
                       <a href="#summary-chart" data-tab="summary-tab" class="btn active">Chart</a>
                       <a href="#summary-text" data-tab="summary-tab" class="btn">Text</a>
                     </div>
-                  </div>
-                  <div class="card-body">
+                  
+</x-slot>
+
+
+                  
+                  
                     <div class="summary">
                       <div class="summary-info" data-tab-group="summary-tab" id="summary-text">
                         <h4>$1,858</h4>
@@ -83,20 +87,24 @@
                         </ul>
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
               <div class="col-12 col-sm-12 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
+                <x-stisla.card>
+<x-slot name="header">
+
                     <h4>Statistics</h4>
                     <div class="card-header-action">
                       <a href="#" class="btn active">Week</a>
                       <a href="#" class="btn">Month</a>
                       <a href="#" class="btn">Year</a>
                     </div>
-                  </div>
-                  <div class="card-body">
+                  
+</x-slot>
+
+
+                  
+                  
                     <canvas id="myChart2" height="180"></canvas>
                     <div class="statistic-details mt-1">
                       <div class="statistic-details-item">
@@ -120,8 +128,7 @@
                         <div class="detail-name">This Year</div>
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
 
                 <div class="card mt-4">
                   <div class="card-header">
@@ -161,14 +168,9 @@
             </div>
             <div class="row">
               <div class="col-12 col-sm-12 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Visitors</h4>
-                  </div>
-                  <div class="card-body">
-                    <div id="visitorMap" data-height="190"></div>
-                  </div>
-                  <div class="card-footer card-footer-grey pt-0">
+                <x-stisla.card title="Visitors">
+<x-slot name="footer">
+
                     <div class="statistic-details mt-4 align-items-center justify-content-center">
                       <div class="statistic-details-item col-sm-4 col-12">
                         <div class="detail-chart">
@@ -192,8 +194,14 @@
                         <div class="detail-name">Organic</div>
                       </div>
                     </div>
-                  </div>
-                </div>
+                  
+</x-slot>
+
+
+                  
+                  
+                    <div id="visitorMap" data-height="190"></div>
+</x-stisla.card>
                 <div class="card mt-4">
                   <div class="card-body">
                     <div class="row">
@@ -222,12 +230,8 @@
                 </div>
               </div>
               <div class="col-12 col-sm-12 col-lg-6 mt-lg-0 mt-sm-4">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Referral URL</h4>
-                  </div>
-                  <div class="card-body">
-                    <canvas id="myChart3" height="170"></canvas>
+                <x-stisla.card title="Referral URL">
+<canvas id="myChart3" height="170"></canvas>
 
                     <div class="mb-4 mt-4">
                       <div class="text-small float-right font-weight-bold text-muted">558</div>
@@ -260,8 +264,7 @@
                         <div class="progress-bar" role="progressbar" data-width="36%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
           </div>

@@ -1,8 +1,7 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Posts</h1>
-            <div class="section-header-button">
+          <x-stisla.section-header title="Posts">
+        <div class="section-header-button">
               <a href="features-post-create.html" class="btn btn-primary">Add New</a>
             </div>
             <div class="section-header-breadcrumb">
@@ -10,8 +9,9 @@
               <div class="breadcrumb-item"><a href="#">Posts</a></div>
               <div class="breadcrumb-item">All Posts</div>
             </div>
-          </div>
-          <div class="section-body">
+    </x-stisla.section-header>
+
+    <div class="section-body">
             <h2 class="section-title">Posts</h2>
             <p class="section-lead">
               You can manage all posts, such as editing, deleting and more.
@@ -41,12 +41,8 @@
             </div>
             <div class="row mt-4">
               <div class="col-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>All Posts</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="float-left">
+                <x-stisla.card title="All Posts">
+<div class="float-left">
                       <select class="form-control selectric">
                         <option>Action For Selected</option>
                         <option>Move to Draft</option>
@@ -108,7 +104,7 @@
                             </a>
                           </td>
                           <td>2018-01-20</td>
-                          <td><div class="badge badge-primary">Published</div></td>
+                          <td><x-stisla.badge type="primary">Published</x-stisla.badge></td>
                         </tr>
                         <tr>
                           <td>
@@ -136,7 +132,7 @@
                             </a>
                           </td>
                           <td>2018-01-20</td>
-                          <td><div class="badge badge-primary">Published</div></td>
+                          <td><x-stisla.badge type="primary">Published</x-stisla.badge></td>
                         </tr>
                         <tr>
                           <td>
@@ -164,7 +160,7 @@
                             </a>
                           </td>
                           <td>2018-01-20</td>
-                          <td><div class="badge badge-primary">Published</div></td>
+                          <td><x-stisla.badge type="primary">Published</x-stisla.badge></td>
                         </tr>
                         <tr>
                           <td>
@@ -192,7 +188,7 @@
                             </a>
                           </td>
                           <td>2018-01-20</td>
-                          <td><div class="badge badge-danger">Draft</div></td>
+                          <td><x-stisla.badge type="danger">Draft</x-stisla.badge></td>
                         </tr>
                         <tr>
                           <td>
@@ -220,7 +216,7 @@
                             </a>
                           </td>
                           <td>2018-01-20</td>
-                          <td><div class="badge badge-warning">Pending</div></td>
+                          <td><x-stisla.badge type="warning">Pending</x-stisla.badge></td>
                         </tr>
                       </table>
                     </div>
@@ -251,8 +247,7 @@
                         </ul>
                       </nav>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
           </div>

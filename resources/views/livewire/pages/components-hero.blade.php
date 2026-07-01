@@ -1,15 +1,14 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Hero</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="Hero">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Components</a></div>
               <div class="breadcrumb-item">Hero</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">Hero</h2>
             <p class="section-lead">Components that can be used to make something bigger than the header.</p>
 

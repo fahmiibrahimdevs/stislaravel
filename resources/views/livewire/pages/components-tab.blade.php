@@ -1,26 +1,21 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Tab</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="Tab">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Components</a></div>
               <div class="breadcrumb-item">Tab</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">Tabs</h2>
             <p class="section-lead">The tab component for dividing parts of content.</p>
 
             <div class="row">
               <div class="col-12 col-sm-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Default Tab</h4>
-                  </div>
-                  <div class="card-body">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <x-stisla.card title="Default Tab">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
                       <li class="nav-item">
                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
                       </li>
@@ -47,16 +42,11 @@
                         Vestibulum imperdiet odio sed neque ultricies, ut dapibus mi maximus. Proin ligula massa, gravida in lacinia efficitur, hendrerit eget mauris. Pellentesque fermentum, sem interdum molestie finibus, nulla diam varius leo, nec varius lectus elit id dolor. Nam malesuada orci non ornare vulputate. Ut ut sollicitudin magna. Vestibulum eget ligula ut ipsum venenatis ultrices. Proin bibendum bibendum augue ut luctus.
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
               <div class="col-12 col-sm-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Bordered Tab</h4>
-                  </div>
-                  <div class="card-body">
-                    <ul class="nav nav-tabs" id="myTab2" role="tablist">
+                <x-stisla.card title="Bordered Tab">
+<ul class="nav nav-tabs" id="myTab2" role="tablist">
                       <li class="nav-item">
                         <a class="nav-link active" id="home-tab2" data-toggle="tab" href="#home2" role="tab" aria-controls="home" aria-selected="true">Home</a>
                       </li>
@@ -83,18 +73,13 @@
                         Vestibulum imperdiet odio sed neque ultricies, ut dapibus mi maximus. Proin ligula massa, gravida in lacinia efficitur, hendrerit eget mauris. Pellentesque fermentum, sem interdum molestie finibus, nulla diam varius leo, nec varius lectus elit id dolor. Nam malesuada orci non ornare vulputate. Ut ut sollicitudin magna. Vestibulum eget ligula ut ipsum venenatis ultrices. Proin bibendum bibendum augue ut luctus.
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
             <div class="row">
               <div class="col-12 col-sm-5 col-lg-5">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Tab <code>.nav-pills</code></h4>
-                  </div>
-                  <div class="card-body">
-                    <ul class="nav nav-pills" id="myTab3" role="tablist">
+                <x-stisla.card title="Tab <code>.nav-pills</code>">
+<ul class="nav nav-pills" id="myTab3" role="tablist">
                       <li class="nav-item">
                         <a class="nav-link active" id="home-tab3" data-toggle="tab" href="#home3" role="tab" aria-controls="home" aria-selected="true">Home</a>
                       </li>
@@ -120,16 +105,11 @@
                         Vestibulum imperdiet odio sed neque ultricies, ut dapibus mi maximus. Proin ligula massa, gravida in lacinia efficitur, hendrerit eget mauris. Pellentesque fermentum, sem interdum molestie finibus, nulla diam varius leo, nec varius lectus elit id dolor.
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
               <div class="col-12 col-sm-7 col-lg-7">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>2 Column</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="row">
+                <x-stisla.card title="2 Column">
+<div class="row">
                       <div class="col-12 col-sm-12 col-md-4">
                         <ul class="nav nav-pills flex-column" id="myTab4" role="tablist">
                           <li class="nav-item">
@@ -162,18 +142,13 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
             <div class="row">
               <div class="col-12 col-sm-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Icon Tab</h4>
-                  </div>
-                  <div class="card-body">
-                    <ul class="nav nav-tabs" id="myTab5" role="tablist">
+                <x-stisla.card title="Icon Tab">
+<ul class="nav nav-tabs" id="myTab5" role="tablist">
                       <li class="nav-item">
                         <a class="nav-link active" id="home-tab5" data-toggle="tab" href="#home5" role="tab" aria-controls="home" aria-selected="true">
                           <i class="fas fa-home"></i> Home</a>
@@ -202,16 +177,11 @@
                         Vestibulum imperdiet odio sed neque ultricies, ut dapibus mi maximus. Proin ligula massa, gravida in lacinia efficitur, hendrerit eget mauris. Pellentesque fermentum, sem interdum molestie finibus, nulla diam varius leo, nec varius lectus elit id dolor.
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
               <div class="col-12 col-sm-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Icon Tab Bordered + Centered <code>.justify-content-center</code></h4>
-                  </div>
-                  <div class="card-body">
-                    <ul class="nav nav-tabs justify-content-center" id="myTab6" role="tablist">
+                <x-stisla.card title="Icon Tab Bordered + Centered <code>.justify-content-center</code>">
+<ul class="nav nav-tabs justify-content-center" id="myTab6" role="tablist">
                       <li class="nav-item">
                         <a class="nav-link active text-center" id="home-tab6" data-toggle="tab" href="#home6" role="tab" aria-controls="home" aria-selected="true">
                           <span><i class="fas fa-home"></i></span> Home</a>
@@ -240,8 +210,7 @@
                         Vestibulum imperdiet odio sed neque ultricies, ut dapibus mi maximus. Proin ligula massa, gravida in lacinia efficitur, hendrerit eget mauris. Pellentesque fermentum, sem interdum molestie finibus, nulla diam varius leo, nec varius lectus elit id dolor.
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
           </div>

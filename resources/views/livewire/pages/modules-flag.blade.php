@@ -1,14 +1,14 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Flag</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="Flag">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Modules</a></div>
               <div class="breadcrumb-item">Flag</div>
             </div>
-          </div>
-          <div class="section-body">
+    </x-stisla.section-header>
+
+    <div class="section-body">
             <h2 class="section-title">Flag</h2>
             <p class="section-lead">
               We also added the 'flag-icon-css' library to make it easier for you to display the country icon. This library was created by @lipis
@@ -16,12 +16,8 @@
 
             <div class="row">
               <div class="col-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Flag</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="row">
+                <x-stisla.card title="Flag">
+<div class="row">
                       <div class="col-6 col-md-3 col-lg-2 mb-5">
                       <div class="country" data-name="Afghanistan" data-continent="Asia">
                         <div class="mb-2" title="Afghanistan">
@@ -2237,8 +2233,7 @@
                       </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
           </div>

@@ -1,26 +1,21 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Wizard</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="Wizard">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Components</a></div>
               <div class="breadcrumb-item">Wizard</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">Wizard</h2>
             <p class="section-lead">The wizard is a component to simplify a process with a step-by-step method.</p>
 
             <div class="row">
               <div class="col-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Order Status</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="row mt-4">
+                <x-stisla.card title="Order Status">
+<div class="row mt-4">
                       <div class="col-12 col-lg-8 offset-lg-2">
                         <div class="wizard-steps">
                           <div class="wizard-step wizard-step-active">
@@ -172,18 +167,13 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
             <div class="row">
               <div class="col-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Create New App</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="row mt-4">
+                <x-stisla.card title="Create New App">
+<div class="row mt-4">
                       <div class="col-12 col-lg-8 offset-lg-2">
                         <div class="wizard-steps">
                           <div class="wizard-step wizard-step-active">
@@ -266,8 +256,7 @@
                         </div>
                       </div>
                     </form>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
           </div>

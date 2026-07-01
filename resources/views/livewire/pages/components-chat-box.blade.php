@@ -1,26 +1,21 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Chat Box</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="Chat Box">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Components</a></div>
               <div class="breadcrumb-item">Chat Box</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">Chat Boxes</h2>
             <p class="section-lead">The chat component and is equipped with a JavaScript API, making it easy for you to integrate with Back-end.</p>
 
             <div class="row align-items-center justify-content-center">
               <div class="col-12 col-sm-6 col-lg-4">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Who's Online?</h4>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-unstyled list-unstyled-border">
+                <x-stisla.card title="Who's Online?">
+<ul class="list-unstyled list-unstyled-border">
                       <li class="media">
                         <img alt="image" class="mr-3 rounded-circle" width="50" src="../assets/img/avatar/avatar-1.png">
                         <div class="media-body">
@@ -50,8 +45,7 @@
                         </div>
                       </li>
                     </ul>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
               <div class="col-12 col-sm-6 col-lg-4">
                 <div class="card chat-box" id="mychatbox">

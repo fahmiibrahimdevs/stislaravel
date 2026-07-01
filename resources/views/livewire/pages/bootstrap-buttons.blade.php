@@ -1,15 +1,14 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Buttons</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="Buttons">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Bootstrap Components</a></div>
               <div class="breadcrumb-item">Button</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">Buttons</h2>
             <p class="section-lead">
               Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
@@ -17,12 +16,8 @@
 
             <div class="row">
               <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Basic</h4>
-                  </div>
-                  <div class="card-body">
-                    <p class="text-muted">Use the <code>.btn .btn-{color}</code> classes.</p>
+                <x-stisla.card title="Basic">
+<p class="text-muted">Use the <code>.btn .btn-{color}</code> classes.</p>
                     <div class="buttons">
                       <a href="#" class="btn btn-primary">Primary</a>
                       <a href="#" class="btn btn-secondary">Secondary</a>
@@ -34,16 +29,11 @@
                       <a href="#" class="btn btn-dark">Dark</a>
                       <a href="#" class="btn">Link</a>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
               <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Buttons <code>.btn-outline</code></h4>
-                  </div>
-                  <div class="card-body">
-                    <p class="text-muted">Use the <code>.btn .btn-outline-{color}</code> classes.</p>
+                <x-stisla.card title="Buttons <code>.btn-outline</code>">
+<p class="text-muted">Use the <code>.btn .btn-outline-{color}</code> classes.</p>
                     <div class="buttons">
                       <a href="#" class="btn btn-outline-primary">Primary</a>
                       <a href="#" class="btn btn-outline-secondary">Secondary</a>
@@ -54,50 +44,35 @@
                       <a href="#" class="btn btn-outline-light">Light</a>
                       <a href="#" class="btn btn-outline-dark">Dark</a>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
             <div class="row">
               <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Button Sizes</h4>
-                  </div>
-                  <div class="card-body">
-                    <p class="text-muted">Use the <code>.btn-lg</code> or <code>.btn-sm</code> classes.</p>
+                <x-stisla.card title="Button Sizes">
+<p class="text-muted">Use the <code>.btn-lg</code> or <code>.btn-sm</code> classes.</p>
                     <div class="buttons">
                       <a href="#" class="btn btn-sm btn-warning">Small</a>
                       <a href="#" class="btn btn-danger">Normal</a>
                       <a href="#" class="btn btn-lg btn-dark">Large</a>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
               <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Button States</h4>
-                  </div>
-                  <div class="card-body">
-                    <p class="text-muted">Use the <code>.disabled</code> or <code>.btn-progress</code> classes.</p>
+                <x-stisla.card title="Button States">
+<p class="text-muted">Use the <code>.disabled</code> or <code>.btn-progress</code> classes.</p>
                     <div class="buttons">
                       <a href="#" class="btn btn-primary">Normal</a>
                       <a href="#" class="btn disabled btn-primary">Disabled</a>
                       <a href="#" class="btn disabled btn-primary btn-progress">Progress</a>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
             <div class="row">
               <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Icon Button</h4>
-                  </div>
-                  <div class="card-body">
-                    <p class="text-muted">Use the <code>.btn-icon</code> and <code>.icon-left</code> classes.</p>
+                <x-stisla.card title="Icon Button">
+<p class="text-muted">Use the <code>.btn-icon</code> and <code>.icon-left</code> classes.</p>
                     <div class="buttons">
                       <a href="#" class="btn btn-icon icon-left"><i class="far fa-user"></i> Default</a>
                       <a href="#" class="btn btn-icon icon-left btn-primary"><i class="far fa-edit"></i> Primary</a>
@@ -109,16 +84,11 @@
                       <a href="#" class="btn btn-icon icon-left btn-light"><i class="fas fa-star"></i> Light</a>
                       <a href="#" class="btn btn-icon icon-left btn-dark"><i class="far fa-file"></i> Dark</a>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
               <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Only Icon Button</h4>
-                  </div>
-                  <div class="card-body">
-                    <p class="text-muted">Use the <code>.btn-icon</code> class.</p>
+                <x-stisla.card title="Only Icon Button">
+<p class="text-muted">Use the <code>.btn-icon</code> class.</p>
                     <div class="buttons">
                       <a href="#" class="btn btn-icon btn-primary"><i class="far fa-edit"></i></a>
                       <a href="#" class="btn btn-icon btn-secondary"><i class="far fa-user"></i></a>
@@ -135,18 +105,13 @@
                       <a href="#" class="btn btn-icon btn-danger"><i class="fas fa-times"></i></a>
                       <a href="#" class="btn btn-icon btn-lg btn-success"><i class="fas fa-check"></i></a>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
             <div class="row">
               <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Button Group</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="btn-group mb-3" role="group" aria-label="Basic example">
+                <x-stisla.card title="Button Group">
+<div class="btn-group mb-3" role="group" aria-label="Basic example">
                       <button type="button" class="btn btn-secondary">Left</button>
                       <button type="button" class="btn btn-secondary">Middle</button>
                       <button type="button" class="btn btn-secondary">Right</button>
@@ -167,23 +132,17 @@
                       <button type="button" class="btn btn-danger">Middle</button>
                       <button type="button" class="btn btn-danger">Right</button>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
               <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Vertical Variation</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="btn-group-vertical" role="group" aria-label="Basic example">
+                <x-stisla.card title="Vertical Variation">
+<div class="btn-group-vertical" role="group" aria-label="Basic example">
                       <button type="button" class="btn btn-secondary">Left</button>
                       <button type="button" class="btn btn-secondary">Middle</button>
                       <button type="button" class="btn btn-secondary">Right</button>
                       <button type="button" class="btn btn-secondary">Justify</button>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
           </div>

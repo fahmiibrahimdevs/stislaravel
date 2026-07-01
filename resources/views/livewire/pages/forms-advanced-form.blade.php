@@ -1,29 +1,21 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Advanced Forms</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="Advanced Forms">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Forms</a></div>
               <div class="breadcrumb-item">Advanced Forms</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">Advanced Forms</h2>
             <p class="section-lead">We provide advanced input fields, such as date picker, color picker, and so on.</p>
 
             <div class="row">
               <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Input Text</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group">
-                      <label>Default Input Text</label>
-                      <input type="text" class="form-control">
-                    </div>
+                <x-stisla.card title="Input Text">
+<x-stisla.input type="text" label="Default Input Text" />
                     <div class="form-group">
                       <label>Phone Number (US Format)</label>
                       <div class="input-group">
@@ -81,14 +73,9 @@
                       <label>Tags</label>
                       <input type="text" class="form-control inputtags">
                     </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Toggle Switches</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group">
+</x-stisla.card>
+                <x-stisla.card title="Toggle Switches">
+<div class="form-group">
                       <div class="control-label">Toggle switches</div>
                       <div class="custom-switches-stacked mt-2">
                         <label class="custom-switch">
@@ -116,14 +103,9 @@
                         <span class="custom-switch-description">I agree with terms and conditions</span>
                       </label>
                     </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Image Check</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group">
+</x-stisla.card>
+                <x-stisla.card title="Image Check">
+<div class="form-group">
                       <label class="form-label">Image Check</label>
                       <div class="row gutters-sm">
                         <div class="col-6 col-sm-4">
@@ -176,14 +158,9 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Color</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group">
+</x-stisla.card>
+                <x-stisla.card title="Color">
+<div class="form-group">
                       <label>Simple</label>
                       <input type="text" class="form-control colorpickerinput">
                     </div>
@@ -239,16 +216,11 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
               <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Select</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="section-title mt-0">Default</div>
+                <x-stisla.card title="Select">
+<div class="section-title mt-0">Default</div>
                     <div class="form-group">
                       <label>Default Select</label>
                       <select class="form-control">
@@ -397,14 +369,9 @@
                         </label>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Toggle Switches</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group">
+</x-stisla.card>
+                <x-stisla.card title="Toggle Switches">
+<div class="form-group">
                       <div class="control-label">Toggle switches</div>
                       <div class="custom-switches-stacked mt-2">
                         <label class="custom-switch">
@@ -432,14 +399,9 @@
                         <span class="custom-switch-description">I agree with terms and conditions</span>
                       </label>
                     </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Date &amp; Time Picker</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group">
+</x-stisla.card>
+                <x-stisla.card title="Date &amp; Time Picker">
+<div class="form-group">
                       <label class="d-block">Date Range Picker With Button</label>
                       <a href="javascript:;" class="btn btn-primary daterange-btn icon-left btn-icon"><i class="fas fa-calendar"></i> Choose Date
                       </a>
@@ -474,8 +436,7 @@
                         <input type="text" class="form-control timepicker">
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
           </div>

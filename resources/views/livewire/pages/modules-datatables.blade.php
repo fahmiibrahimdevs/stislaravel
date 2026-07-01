@@ -1,15 +1,14 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>DataTables</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="DataTables">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Modules</a></div>
               <div class="breadcrumb-item">DataTables</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">DataTables</h2>
             <p class="section-lead">
               We use 'DataTables' made by @SpryMedia. You can check the full documentation <a href="https://datatables.net/">here</a>.
@@ -17,12 +16,8 @@
 
             <div class="row">
               <div class="col-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Basic DataTables</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="table-responsive">
+                <x-stisla.card title="Basic DataTables">
+<div class="table-responsive">
                       <table class="table table-striped" id="table-1">
                         <thead>
                           <tr>
@@ -52,7 +47,7 @@
                               <img alt="image" src="../assets/img/avatar/avatar-5.png" class="rounded-circle" width="35" data-toggle="tooltip" title="Wildan Ahdian">
                             </td>
                             <td>2018-01-20</td>
-                            <td><div class="badge badge-success">Completed</div></td>
+                            <td><x-stisla.badge type="success">Completed</x-stisla.badge></td>
                             <td><a href="#" class="btn btn-secondary">Detail</a></td>
                           </tr>
                           <tr>
@@ -71,7 +66,7 @@
                               <img alt="image" src="../assets/img/avatar/avatar-4.png" class="rounded-circle" width="35" data-toggle="tooltip" title="Bagus Dwi Cahya">
                             </td>
                             <td>2018-04-10</td>
-                            <td><div class="badge badge-info">Todo</div></td>
+                            <td><x-stisla.badge type="info">Todo</x-stisla.badge></td>
                             <td><a href="#" class="btn btn-secondary">Detail</a></td>
                           </tr>
                           <tr>
@@ -89,7 +84,7 @@
                               <img alt="image" src="../assets/img/avatar/avatar-2.png" class="rounded-circle" width="35" data-toggle="tooltip" title="Hasan Basri">
                             </td>
                             <td>2018-01-29</td>
-                            <td><div class="badge badge-warning">In Progress</div></td>
+                            <td><x-stisla.badge type="warning">In Progress</x-stisla.badge></td>
                             <td><a href="#" class="btn btn-secondary">Detail</a></td>
                           </tr>
                           <tr>
@@ -109,24 +104,19 @@
                               <img alt="image" src="../assets/img/avatar/avatar-1.png" class="rounded-circle" width="35" data-toggle="tooltip" title="Khaerul Anwar">
                             </td>
                             <td>2018-01-16</td>
-                            <td><div class="badge badge-success">Completed</div></td>
+                            <td><x-stisla.badge type="success">Completed</x-stisla.badge></td>
                             <td><a href="#" class="btn btn-secondary">Detail</a></td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
             <div class="row">
               <div class="col-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Advanced Table</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="table-responsive">
+                <x-stisla.card title="Advanced Table">
+<div class="table-responsive">
                       <table class="table table-striped" id="table-2">
                         <thead>
                           <tr>
@@ -162,7 +152,7 @@
                               <img alt="image" src="../assets/img/avatar/avatar-5.png" class="rounded-circle" width="35" data-toggle="tooltip" title="Wildan Ahdian">
                             </td>
                             <td>2018-01-20</td>
-                            <td><div class="badge badge-success">Completed</div></td>
+                            <td><x-stisla.badge type="success">Completed</x-stisla.badge></td>
                             <td><a href="#" class="btn btn-secondary">Detail</a></td>
                           </tr>
                           <tr>
@@ -184,7 +174,7 @@
                               <img alt="image" src="../assets/img/avatar/avatar-4.png" class="rounded-circle" width="35" data-toggle="tooltip" title="Bagus Dwi Cahya">
                             </td>
                             <td>2018-04-10</td>
-                            <td><div class="badge badge-info">Todo</div></td>
+                            <td><x-stisla.badge type="info">Todo</x-stisla.badge></td>
                             <td><a href="#" class="btn btn-secondary">Detail</a></td>
                           </tr>
                           <tr>
@@ -205,7 +195,7 @@
                               <img alt="image" src="../assets/img/avatar/avatar-2.png" class="rounded-circle" width="35" data-toggle="tooltip" title="Hasan Basri">
                             </td>
                             <td>2018-01-29</td>
-                            <td><div class="badge badge-warning">In Progress</div></td>
+                            <td><x-stisla.badge type="warning">In Progress</x-stisla.badge></td>
                             <td><a href="#" class="btn btn-secondary">Detail</a></td>
                           </tr>
                           <tr>
@@ -228,14 +218,13 @@
                               <img alt="image" src="../assets/img/avatar/avatar-1.png" class="rounded-circle" width="35" data-toggle="tooltip" title="Khaerul Anwar">
                             </td>
                             <td>2018-01-16</td>
-                            <td><div class="badge badge-success">Completed</div></td>
+                            <td><x-stisla.badge type="success">Completed</x-stisla.badge></td>
                             <td><a href="#" class="btn btn-secondary">Detail</a></td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
           </div>

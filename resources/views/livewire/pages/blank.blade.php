@@ -1,9 +1,7 @@
 <div>
 <section class="section">
-                        <div class="section-header">
-                            <h1>Blank Page</h1>
-                        </div>
+                        <x-stisla.section-header title="Blank Page" />
 
-                        <div class="section-body"></div>
+    <div class="section-body"></div>
                     </section>
 </div>

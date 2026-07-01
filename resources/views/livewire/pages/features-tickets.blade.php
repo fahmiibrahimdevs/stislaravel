@@ -1,14 +1,13 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Tickets</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="Tickets">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item">Tickets</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">Help Your Customer</h2>
             <p class="section-lead">
               Some customers need your help.
@@ -16,12 +15,8 @@
 
             <div class="row">
               <div class="col-md-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Tickets</h4>
-                  </div>
-                  <div class="card-body">
-                    <a href="#" class="btn btn-primary btn-icon icon-left btn-lg btn-block mb-4 d-md-none" data-toggle-slide="#ticket-items">
+                <x-stisla.card title="Tickets">
+<a href="#" class="btn btn-primary btn-icon icon-left btn-lg btn-block mb-4 d-md-none" data-toggle-slide="#ticket-items">
                       <i class="fas fa-list"></i> All Tickets
                     </a>
                     <div class="tickets">
@@ -113,8 +108,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
           </div>

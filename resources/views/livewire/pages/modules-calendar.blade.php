@@ -1,15 +1,14 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Calendar</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="Calendar">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Modules</a></div>
               <div class="breadcrumb-item">Calendar</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">Calendar</h2>
             <p class="section-lead">
               We use 'Full Calendar' made by @fullcalendar. You can check the full documentation <a href="https://fullcalendar.io/">here</a>.
@@ -17,16 +16,11 @@
 
             <div class="row">
               <div class="col-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Calendar</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="fc-overflow">
+                <x-stisla.card title="Calendar">
+<div class="fc-overflow">
                       <div id="myEvent"></div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
           </div>

@@ -1,15 +1,14 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Pricing</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="Pricing">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Components</a></div>
               <div class="breadcrumb-item">Pricing</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">Pricing</h2>
             <p class="section-lead">Price components are very important for SaaS projects or other projects.</p>
 

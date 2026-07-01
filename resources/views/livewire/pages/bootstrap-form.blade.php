@@ -1,15 +1,14 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Form</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="Form">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Bootstrap Components</a></div>
               <div class="breadcrumb-item">Form</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">Forms</h2>
             <p class="section-lead">
               Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.
@@ -17,18 +16,21 @@
 
             <div class="row">
               <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>HTML5 Form Basic</h4>
-                  </div>
-                  <div class="card-body">
+                <x-stisla.card title="HTML5 Form Basic">
+<x-slot name="footer">
+
+                    <button class="btn btn-primary mr-1" type="submit">Submit</button>
+                    <button class="btn btn-secondary" type="reset">Reset</button>
+                  
+</x-slot>
+
+
+                  
+                  
                     <div class="alert alert-info">
                       <b>Note!</b> Not all browsers support HTML5 type input.
                     </div>
-                    <div class="form-group">
-                      <label>Text</label>
-                      <input type="text" class="form-control">
-                    </div>
+                    <x-stisla.input type="text" label="Text" />
                     <div class="form-group">
                       <label>Select</label>
                       <select class="form-control">
@@ -65,34 +67,16 @@
                         </label>
                       </div>
                     </div>
-                    <div class="form-group">
-                      <label>Color</label>
-                      <input type="color" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label>Date</label>
-                      <input type="date" class="form-control">
-                    </div>
+                    <x-stisla.input type="color" label="Color" />
+                    <x-stisla.input type="date" label="Date" />
                     <div class="form-group">
                       <label>Datetime Local</label>
                       <input type="datetime-local" class="form-control">
                     </div>
-                    <div class="form-group">
-                      <label>Email</label>
-                      <input type="email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label>File</label>
-                      <input type="file" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label>Month</label>
-                      <input type="month" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label>Password</label>
-                      <input type="password" class="form-control">
-                    </div>
+                    <x-stisla.input type="email" label="Email" />
+                    <x-stisla.input type="file" label="File" />
+                    <x-stisla.input type="month" label="Month" />
+                    <x-stisla.input type="password" label="Password" />
                     <div class="form-group">
                       <label class="d-block">Radio</label>
                       <div class="form-check">
@@ -108,42 +92,18 @@
                         </label>
                       </div>
                     </div>
-                    <div class="form-group">
-                      <label>Range</label>
-                      <input type="range" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label>Search</label>
-                      <input type="search" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label>Tel</label>
-                      <input type="tel" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label>Time</label>
-                      <input type="time" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label>Url</label>
-                      <input type="url" class="form-control">
-                    </div>
+                    <x-stisla.input type="range" label="Range" />
+                    <x-stisla.input type="search" label="Search" />
+                    <x-stisla.input type="tel" label="Tel" />
+                    <x-stisla.input type="time" label="Time" />
+                    <x-stisla.input type="url" label="Url" />
                     <div class="form-group mb-0">
                       <label>Week</label>
                       <input type="week" class="form-control">
                     </div>
-                  </div>
-                  <div class="card-footer text-right">
-                    <button class="btn btn-primary mr-1" type="submit">Submit</button>
-                    <button class="btn btn-secondary" type="reset">Reset</button>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Inline Forms</h4>
-                  </div>
-                  <div class="card-body">
-                    <form class="form-inline">
+</x-stisla.card>
+                <x-stisla.card title="Inline Forms">
+<form class="form-inline">
                       <label class="sr-only" for="inlineFormInputName2">Name</label>
                       <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
 
@@ -152,14 +112,9 @@
                         <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
                       </div>
                     </form>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Help Text</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group">
+</x-stisla.card>
+                <x-stisla.card title="Help Text">
+<div class="form-group">
                       <label for="inputPassword5">Password</label>
                       <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
                       <small id="passwordHelpBlock" class="form-text text-muted">
@@ -175,14 +130,9 @@
                         </small>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Custom Forms #2</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="section-title mt-0">Select</div>
+</x-stisla.card>
+                <x-stisla.card title="Custom Forms #2">
+<div class="section-title mt-0">Select</div>
                     <div class="form-group">
                       <label>Choose One</label>
                       <select class="custom-select">
@@ -198,14 +148,9 @@
                       <input type="file" class="custom-file-input" id="customFile">
                       <label class="custom-file-label" for="customFile">Choose file</label>
                     </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Input Group Text</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group">
+</x-stisla.card>
+                <x-stisla.card title="Input Group Text">
+<div class="form-group">
                       <div class="input-group mb-2">
                         <div class="input-group-prepend">
                           <div class="input-group-text">@</div>
@@ -232,14 +177,9 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Input Group #2</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="section-title mt-0">Multiple Addons</div>
+</x-stisla.card>
+                <x-stisla.card title="Input Group #2">
+<div class="section-title mt-0">Multiple Addons</div>
                     <div class="form-group">
                       <div class="input-group">
                         <div class="input-group-prepend">
@@ -290,24 +230,16 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
               <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Sizing</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="section-title mt-0">Text</div>
+                <x-stisla.card title="Sizing">
+<div class="section-title mt-0">Text</div>
                     <div class="form-group">
                       <label>Text <code>.form-control-sm</code></label>
                       <input type="text" class="form-control form-control-sm">
                     </div>
-                    <div class="form-group">
-                      <label>Text</label>
-                      <input type="text" class="form-control">
-                    </div>
+                    <x-stisla.input type="text" label="Text" />
                     <div class="form-group">
                       <label>Text <code>.form-control-lg</code></label>
                       <input type="text" class="form-control form-control-lg">
@@ -338,19 +270,11 @@
                         <option>Option 3</option>
                       </select>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
 
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Disabled &amp; Read Only</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="section-title mt-0">Text</div>
-                    <div class="form-group">
-                      <label>Readonly</label>
-                      <input type="text" class="form-control" readonly="">
-                    </div>
+                <x-stisla.card title="Disabled &amp; Read Only">
+<div class="section-title mt-0">Text</div>
+                    <x-stisla.input type="text" label="Readonly" readonly="" />
                     <div class="form-group">
                       <label>Readonly Plain Text</label>
                       <input type="text" class="form-control-plaintext" readonly="" value="Hello!">
@@ -385,15 +309,10 @@
                         </label>
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
 
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Inline</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group">
+                <x-stisla.card title="Inline">
+<div class="form-group">
                       <label class="d-block">Inline Checkbox</label>
                       <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -423,14 +342,18 @@
                         <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
 
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Horizontal Form</h4>
-                  </div>
-                  <div class="card-body">
+                <x-stisla.card title="Horizontal Form">
+<x-slot name="footer">
+
+                    <button class="btn btn-primary">Submit</button>
+                  
+</x-slot>
+
+
+                  
+                  
                     <div class="form-row">
                       <div class="form-group col-md-6">
                         <label for="inputEmail4">Email</label>
@@ -474,17 +397,18 @@
                         </label>
                       </div>
                     </div>
-                  </div>
-                  <div class="card-footer">
-                    <button class="btn btn-primary">Submit</button>
-                  </div>
-                </div>
+</x-stisla.card>
 
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Horizontal Form</h4>
-                  </div>
-                  <div class="card-body">
+                <x-stisla.card title="Horizontal Form">
+<x-slot name="footer">
+
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                  
+</x-slot>
+
+
+                  
+                  
                     <div class="form-group row">
                       <label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
                       <div class="col-sm-9">
@@ -533,18 +457,10 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="card-footer">
-                    <button type="submit" class="btn btn-primary">Sign in</button>
-                  </div>
-                </div>
+</x-stisla.card>
 
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Custom Forms</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="section-title mt-0">Checkbox</div>
+                <x-stisla.card title="Custom Forms">
+<div class="section-title mt-0">Checkbox</div>
                     <div class="custom-control custom-checkbox">
                       <input type="checkbox" class="custom-control-input" id="customCheck1">
                       <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
@@ -579,20 +495,14 @@
                       <input type="radio" name="radioDisabled" class="custom-control-input" disabled>
                       <label class="custom-control-label">Toggle this custom radio</label>
                     </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Learn More</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="jumbotron text-center">
+</x-stisla.card>
+                <x-stisla.card title="Learn More">
+<div class="jumbotron text-center">
                       <h2>Learn More</h2>
                       <p class="lead text-muted mt-3">All the above form elements are the default of bootstrap and you can learn them on the official documentation provided by Bootstrap.</p>
                       <a class="btn btn-primary mt-3" href="https://getbootstrap.com/docs/4.0/components/forms/" target="_blank" role="button">Learn more</a>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
           </div>

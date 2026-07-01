@@ -1,15 +1,14 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Table</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="Table">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Bootstrap Components</a></div>
               <div class="breadcrumb-item">Table</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">Tables</h2>
             <p class="section-lead">
               Examples for opt-in styling of tables (given their prevalent use in JavaScript plugins) with Bootstrap.
@@ -17,12 +16,8 @@
 
             <div class="row">
               <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Simple</h4>
-                  </div>
-                  <div class="card-body">
-                    <table class="table">
+                <x-stisla.card title="Simple">
+<table class="table">
                       <thead>
                         <tr>
                           <th scope="col">#</th>
@@ -52,14 +47,9 @@
                         </tr>
                       </tbody>
                     </table>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>FIt</h4>
-                  </div>
-                  <div class="card-body p-0">
-                    <table class="table">
+</x-stisla.card>
+                <x-stisla.card title="FIt">
+<table class="table">
                       <thead>
                         <tr>
                           <th scope="col">#</th>
@@ -89,14 +79,9 @@
                         </tr>
                       </tbody>
                     </table>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Table Head Options</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="section-title mt-0">Light</div>
+</x-stisla.card>
+                <x-stisla.card title="Table Head Options">
+<div class="section-title mt-0">Light</div>
                     <table class="table">
                       <thead class="thead-dark">
                         <tr>
@@ -158,14 +143,9 @@
                         </tr>
                       </tbody>
                     </table>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Borderless</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="section-title mt-0">Light</div>
+</x-stisla.card>
+                <x-stisla.card title="Borderless">
+<div class="section-title mt-0">Light</div>
                     <table class="table table-borderless">
                       <thead>
                         <tr>
@@ -227,14 +207,9 @@
                         </tr>
                       </tbody>
                     </table>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Hover</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="section-title mt-0">Light</div>
+</x-stisla.card>
+                <x-stisla.card title="Hover">
+<div class="section-title mt-0">Light</div>
                     <table class="table table-hover">
                       <thead>
                         <tr>
@@ -296,16 +271,11 @@
                         </tr>
                       </tbody>
                     </table>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
               <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Invert</h4>
-                  </div>
-                  <div class="card-body">
-                    <table class="table table-dark">
+                <x-stisla.card title="Invert">
+<table class="table table-dark">
                       <thead>
                         <tr>
                           <th scope="col">#</th>
@@ -335,14 +305,9 @@
                         </tr>
                       </tbody>
                     </table>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Striped</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="section-title mt-0">Light</div>
+</x-stisla.card>
+                <x-stisla.card title="Striped">
+<div class="section-title mt-0">Light</div>
                     <table class="table table-striped">
                       <thead>
                         <tr>
@@ -404,14 +369,9 @@
                         </tr>
                       </tbody>
                     </table>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Bordered</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="section-title mt-0">Light</div>
+</x-stisla.card>
+                <x-stisla.card title="Bordered">
+<div class="section-title mt-0">Light</div>
                     <table class="table table-bordered">
                       <thead>
                         <tr>
@@ -473,14 +433,9 @@
                         </tr>
                       </tbody>
                     </table>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Small Table, Caption &amp; Responsive</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="section-title mt-0">Light</div>
+</x-stisla.card>
+                <x-stisla.card title="Small Table, Caption &amp; Responsive">
+<div class="section-title mt-0">Light</div>
                     <table class="table table-sm">
                       <thead>
                         <tr>
@@ -607,8 +562,7 @@
                         </tbody>
                       </table>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
           </div>

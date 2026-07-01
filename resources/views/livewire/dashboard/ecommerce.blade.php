@@ -91,14 +91,9 @@
           </div>
           <div class="row">
             <div class="col-lg-8">
-              <div class="card">
-                <div class="card-header">
-                  <h4>Budget vs Sales</h4>
-                </div>
-                <div class="card-body">
-                  <canvas id="myChart" height="158"></canvas>
-                </div>
-              </div>
+              <x-stisla.card title="Budget vs Sales">
+<canvas id="myChart" height="158"></canvas>
+</x-stisla.card>
             </div>
             <div class="col-lg-4">
               <div class="card gradient-bottom">
@@ -219,12 +214,8 @@
           </div>
           <div class="row">
             <div class="col-md-6">
-              <div class="card">
-                <div class="card-header">
-                  <h4>Best Products</h4>
-                </div>
-                <div class="card-body">
-                  <div class="owl-carousel owl-theme" id="products-carousel">
+              <x-stisla.card title="Best Products">
+<div class="owl-carousel owl-theme" id="products-carousel">
                     <div>
                       <div class="product-item pb-3">
                         <div class="product-image">
@@ -289,16 +280,11 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+</x-stisla.card>
             </div>
             <div class="col-md-6">
-              <div class="card">
-                <div class="card-header">
-                  <h4>Top Countries</h4>
-                </div>
-                <div class="card-body">
-                  <div class="row">
+              <x-stisla.card title="Top Countries">
+<div class="row">
                     <div class="col-sm-6">
                       <div class="text-title mb-2">July</div>
                       <ul class="list-unstyled list-unstyled-border list-unstyled-noborder mb-0">
@@ -352,20 +338,24 @@
                       </ul>
                     </div>
                   </div>
-                </div>
-              </div>
+</x-stisla.card>
             </div>
           </div>
           <div class="row">
             <div class="col-md-8">
-              <div class="card">
-                <div class="card-header">
+              <x-stisla.card>
+<x-slot name="header">
+
                   <h4>Invoices</h4>
                   <div class="card-header-action">
                     <a href="#" class="btn btn-danger">View More <i class="fas fa-chevron-right"></i></a>
                   </div>
-                </div>
-                <div class="card-body p-0">
+                
+</x-slot>
+
+
+                
+                
                   <div class="table-responsive table-invoice">
                     <table class="table table-striped">
                       <tr>
@@ -378,7 +368,7 @@
                       <tr>
                         <td><a href="#">INV-87239</a></td>
                         <td class="font-weight-600">Kusnadi</td>
-                        <td><div class="badge badge-warning">Unpaid</div></td>
+                        <td><x-stisla.badge type="warning">Unpaid</x-stisla.badge></td>
                         <td>July 19, 2018</td>
                         <td>
                           <a href="#" class="btn btn-primary">Detail</a>
@@ -387,7 +377,7 @@
                       <tr>
                         <td><a href="#">INV-48574</a></td>
                         <td class="font-weight-600">Hasan Basri</td>
-                        <td><div class="badge badge-success">Paid</div></td>
+                        <td><x-stisla.badge type="success">Paid</x-stisla.badge></td>
                         <td>July 21, 2018</td>
                         <td>
                           <a href="#" class="btn btn-primary">Detail</a>
@@ -396,7 +386,7 @@
                       <tr>
                         <td><a href="#">INV-76824</a></td>
                         <td class="font-weight-600">Muhamad Nuruzzaki</td>
-                        <td><div class="badge badge-warning">Unpaid</div></td>
+                        <td><x-stisla.badge type="warning">Unpaid</x-stisla.badge></td>
                         <td>July 22, 2018</td>
                         <td>
                           <a href="#" class="btn btn-primary">Detail</a>
@@ -405,7 +395,7 @@
                       <tr>
                         <td><a href="#">INV-84990</a></td>
                         <td class="font-weight-600">Agung Ardiansyah</td>
-                        <td><div class="badge badge-warning">Unpaid</div></td>
+                        <td><x-stisla.badge type="warning">Unpaid</x-stisla.badge></td>
                         <td>July 22, 2018</td>
                         <td>
                           <a href="#" class="btn btn-primary">Detail</a>
@@ -414,7 +404,7 @@
                       <tr>
                         <td><a href="#">INV-87320</a></td>
                         <td class="font-weight-600">Ardian Rahardiansyah</td>
-                        <td><div class="badge badge-success">Paid</div></td>
+                        <td><x-stisla.badge type="success">Paid</x-stisla.badge></td>
                         <td>July 28, 2018</td>
                         <td>
                           <a href="#" class="btn btn-primary">Detail</a>
@@ -422,8 +412,7 @@
                       </tr>
                     </table>
                   </div>
-                </div>
-              </div>
+</x-stisla.card>
             </div>
             <div class="col-md-4">
               <div class="card card-hero">

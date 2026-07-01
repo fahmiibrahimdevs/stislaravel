@@ -1,15 +1,14 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>List Group</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="List Group">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Bootstrap Components</a></div>
               <div class="breadcrumb-item">List Group</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">List Group</h2>
             <p class="section-lead">
               List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.
@@ -17,54 +16,35 @@
 
             <div class="row">
               <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Basic</h4>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-group">
+                <x-stisla.card title="Basic">
+<ul class="list-group">
                       <li class="list-group-item">Cras justo odio</li>
                       <li class="list-group-item">Dapibus ac facilisis in</li>
                       <li class="list-group-item">Morbi leo risus</li>
                       <li class="list-group-item">Porta ac consectetur ac</li>
                       <li class="list-group-item">Vestibulum at eros</li>
                     </ul>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Disabled</h4>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-group">
+</x-stisla.card>
+                <x-stisla.card title="Disabled">
+<ul class="list-group">
                       <li class="list-group-item">Cras justo odio</li>
                       <li class="list-group-item disabled">Dapibus ac facilisis in</li>
                       <li class="list-group-item">Morbi leo risus</li>
                       <li class="list-group-item">Porta ac consectetur ac</li>
                       <li class="list-group-item">Vestibulum at eros</li>
                     </ul>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Flush</h4>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-group list-group-flush">
+</x-stisla.card>
+                <x-stisla.card title="Flush">
+<ul class="list-group list-group-flush">
                       <li class="list-group-item">Cras justo odio</li>
                       <li class="list-group-item">Dapibus ac facilisis in</li>
                       <li class="list-group-item">Morbi leo risus</li>
                       <li class="list-group-item">Porta ac consectetur ac</li>
                       <li class="list-group-item">Vestibulum at eros</li>
                     </ul>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Badges</h4>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-group">
+</x-stisla.card>
+                <x-stisla.card title="Badges">
+<ul class="list-group">
                       <li class="list-group-item d-flex justify-content-between align-items-center">
                         Cras justo odio
                         <span class="badge badge-primary badge-pill">14</span>
@@ -78,14 +58,9 @@
                         <span class="badge badge-primary badge-pill">1</span>
                       </li>
                     </ul>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>JavaScript Behavior</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="row">
+</x-stisla.card>
+                <x-stisla.card title="JavaScript Behavior">
+<div class="row">
                       <div class="col-4">
                         <div class="list-group" id="list-tab" role="tablist">
                           <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab">Home</a>
@@ -115,30 +90,20 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
               <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Active</h4>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-group">
+                <x-stisla.card title="Active">
+<ul class="list-group">
                       <li class="list-group-item">Cras justo odio</li>
                       <li class="list-group-item active">Dapibus ac facilisis in</li>
                       <li class="list-group-item">Morbi leo risus</li>
                       <li class="list-group-item">Porta ac consectetur ac</li>
                       <li class="list-group-item">Vestibulum at eros</li>
                     </ul>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Link</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="list-group">
+</x-stisla.card>
+                <x-stisla.card title="Link">
+<div class="list-group">
                       <a href="#" class="list-group-item list-group-item-action active">
                         Cras justo odio
                       </a>
@@ -147,14 +112,9 @@
                       <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
                       <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
                     </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Contextual Classes</h4>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-group">
+</x-stisla.card>
+                <x-stisla.card title="Contextual Classes">
+<ul class="list-group">
                       <li class="list-group-item">Dapibus ac facilisis in</li>
                       <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
                       <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
@@ -165,14 +125,9 @@
                       <li class="list-group-item list-group-item-light">A simple light list group item</li>
                       <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
                     </ul>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Custom Content</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="list-group">
+</x-stisla.card>
+                <x-stisla.card title="Custom Content">
+<div class="list-group">
                       <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
                         <div class="d-flex w-100 justify-content-between">
                           <h5 class="mb-1">List group item heading</h5>
@@ -198,8 +153,7 @@
                         <small class="text-muted">Donec id elit non mi porta.</small>
                       </a>
                     </div>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
           </div>

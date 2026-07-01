@@ -5,70 +5,23 @@
           </div>
           <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="card card-statistic-1">
-                <div class="card-icon bg-primary">
-                  <i class="far fa-user"></i>
-                </div>
-                <div class="card-wrap">
-                  <div class="card-header">
-                    <h4>Total Admin</h4>
-                  </div>
-                  <div class="card-body">
-                    10
-                  </div>
-                </div>
-              </div>
+              <x-stisla.statistic title="Total Admin" value="10" icon="far fa-user" type="primary" />
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="card card-statistic-1">
-                <div class="card-icon bg-danger">
-                  <i class="far fa-newspaper"></i>
-                </div>
-                <div class="card-wrap">
-                  <div class="card-header">
-                    <h4>News</h4>
-                  </div>
-                  <div class="card-body">
-                    42
-                  </div>
-                </div>
-              </div>
+              <x-stisla.statistic title="News" value="42" icon="far fa-newspaper" type="danger" />
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="card card-statistic-1">
-                <div class="card-icon bg-warning">
-                  <i class="far fa-file"></i>
-                </div>
-                <div class="card-wrap">
-                  <div class="card-header">
-                    <h4>Reports</h4>
-                  </div>
-                  <div class="card-body">
-                    1,201
-                  </div>
-                </div>
-              </div>
+              <x-stisla.statistic title="Reports" value="1,201" icon="far fa-file" type="warning" />
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="card card-statistic-1">
-                <div class="card-icon bg-success">
-                  <i class="fas fa-circle"></i>
-                </div>
-                <div class="card-wrap">
-                  <div class="card-header">
-                    <h4>Online Users</h4>
-                  </div>
-                  <div class="card-body">
-                    47
-                  </div>
-                </div>
-              </div>
+              <x-stisla.statistic title="Online Users" value="47" icon="fas fa-circle" type="success" />
             </div>
           </div>
           <div class="row">
             <div class="col-lg-8 col-md-12 col-12 col-sm-12">
-              <div class="card">
-                <div class="card-header">
+              <x-stisla.card>
+<x-slot name="header">
+
                   <h4>Statistics</h4>
                   <div class="card-header-action">
                     <div class="btn-group">
@@ -76,8 +29,12 @@
                       <a href="#" class="btn">Month</a>
                     </div>
                   </div>
-                </div>
-                <div class="card-body">
+                
+</x-slot>
+
+
+                
+                
                   <canvas id="myChart" height="182"></canvas>
                   <div class="statistic-details mt-sm-4">
                     <div class="statistic-details-item">
@@ -101,16 +58,11 @@
                       <div class="detail-name">This Year's Sales</div>
                     </div>
                   </div>
-                </div>
-              </div>
+</x-stisla.card>
             </div>
             <div class="col-lg-4 col-md-12 col-12 col-sm-12">
-              <div class="card">
-                <div class="card-header">
-                  <h4>Recent Activities</h4>
-                </div>
-                <div class="card-body">
-                  <ul class="list-unstyled list-unstyled-border">
+              <x-stisla.card title="Recent Activities">
+<ul class="list-unstyled list-unstyled-border">
                     <li class="media">
                       <img class="mr-3 rounded-circle" width="50" src="../assets/img/avatar/avatar-1.png" alt="avatar">
                       <div class="media-body">
@@ -149,25 +101,18 @@
                       View All
                     </a>
                   </div>
-                </div>
-              </div>
+</x-stisla.card>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-6 col-md-12 col-12 col-sm-12">
-              <div class="card">
-                <div class="card-body pt-2 pb-2">
-                  <div id="myWeather">Please wait</div>
-                </div>
-              </div>
+              <x-stisla.card>
+<div id="myWeather">Please wait</div>
+</x-stisla.card>
             </div>
             <div class="col-lg-6 col-md-12 col-12 col-sm-12">
-              <div class="card">
-                <div class="card-header">
-                  <h4>Authors</h4>
-                </div>
-                <div class="card-body">
-                  <div class="row pb-2">
+              <x-stisla.card title="Authors">
+<div class="row pb-2">
                     <div class="col-6 col-sm-3 col-lg-3 mb-4 mb-md-0">
                       <div class="avatar-item mb-0">
                         <img alt="image" src="../assets/img/avatar/avatar-5.png" class="img-fluid" data-toggle="tooltip" title="Alfa Zulkarnain">
@@ -193,18 +138,13 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+</x-stisla.card>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-6 col-md-6 col-12">
-              <div class="card">
-                <div class="card-header">
-                  <h4>Referral URL</h4>
-                </div>
-                <div class="card-body">
-                  <div class="mb-4">
+              <x-stisla.card title="Referral URL">
+<div class="mb-4">
                     <div class="text-small float-right font-weight-bold text-muted">2,100</div>
                     <div class="font-weight-bold mb-1">Google</div>
                     <div class="progress" data-height="3">
@@ -251,14 +191,9 @@
                       <div class="progress-bar" role="progressbar" data-width="20%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header">
-                  <h4>Popular Browser</h4>
-                </div>
-                <div class="card-body">
-                  <div class="row">
+</x-stisla.card>
+              <x-stisla.card title="Popular Browser">
+<div class="row">
                     <div class="col text-center">
                       <div class="browser browser-chrome"></div>
                       <div class="mt-2 font-weight-bold">Chrome</div>
@@ -285,8 +220,7 @@
                       <div class="text-muted text-small"><span class="text-primary"><i class="fas fa-caret-up"></i></span> 5%</div>
                     </div>
                   </div>
-                </div>
-              </div>
+</x-stisla.card>
               <div class="card mt-sm-5 mt-md-0">
                 <div class="card-header">
                   <h4>Visitors</h4>
@@ -297,8 +231,9 @@
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-12">
-              <div class="card">
-                <div class="card-header">
+              <x-stisla.card>
+<x-slot name="header">
+
                   <h4>This Week Stats</h4>
                   <div class="card-header-action">
                     <div class="dropdown">
@@ -312,8 +247,12 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="card-body">
+                
+</x-slot>
+
+
+                
+                
                   <div class="summary">
                     <div class="summary-info">
                       <h4>$1,053</h4>
@@ -360,16 +299,20 @@
                       </ul>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header">
+</x-stisla.card>
+              <x-stisla.card>
+<x-slot name="header">
+
                   <h4 class="d-inline">Tasks</h4>
                   <div class="card-header-action">
                     <a href="#" class="btn btn-primary">View All</a>
                   </div>
-                </div>
-                <div class="card-body">
+                
+</x-slot>
+
+
+                
+                
                   <ul class="list-unstyled list-unstyled-border">
                     <li class="media">
                       <div class="custom-control custom-checkbox">
@@ -420,18 +363,22 @@
                       </div>
                     </li>
                   </ul>
-                </div>
-              </div>
+</x-stisla.card>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-5 col-md-12 col-12 col-sm-12">
               <form method="post" class="needs-validation" novalidate="">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Quick Draft</h4>
-                  </div>
-                  <div class="card-body pb-0">
+                <x-stisla.card title="Quick Draft">
+<x-slot name="footer">
+
+                    <button class="btn btn-primary">Save Draft</button>
+                  
+</x-slot>
+
+
+                  
+                  
                     <div class="form-group">
                       <label>Title</label>
                       <input type="text" name="title" class="form-control" required>
@@ -443,22 +390,23 @@
                       <label>Content</label>
                       <textarea class="summernote-simple"></textarea>
                     </div>
-                  </div>
-                  <div class="card-footer pt-0">
-                    <button class="btn btn-primary">Save Draft</button>
-                  </div>
-                </div>
+</x-stisla.card>
               </form>
             </div>
             <div class="col-lg-7 col-md-12 col-12 col-sm-12">
-              <div class="card">
-                <div class="card-header">
+              <x-stisla.card>
+<x-slot name="header">
+
                   <h4>Latest Posts</h4>
                   <div class="card-header-action">
                     <a href="#" class="btn btn-primary">View All</a>
                   </div>
-                </div>
-                <div class="card-body p-0">
+                
+</x-slot>
+
+
+                
+                
                   <div class="table-responsive">
                     <table class="table table-striped mb-0">
                       <thead>
@@ -574,8 +522,7 @@
                       </tbody>
                     </table>
                   </div>
-                </div>
-              </div>
+</x-stisla.card>
             </div>
           </div>
         </section>

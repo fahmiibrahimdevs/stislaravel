@@ -1,26 +1,21 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Ion Icons</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="Ion Icons">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Modules</a></div>
               <div class="breadcrumb-item">Ion Icons</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">Ion Icons</h2>
             <p class="section-lead">
               In addition to Font Awesome 5, we also use the <a href="http://ionicons.com/" target="_blank">Ion Icons</a> created by Ionic Framework to make it easier for you to use the icon.
             </p>
 
-            <div class="card">
-              <div class="card-header">
-                <h4>Ion Icons</h4>
-              </div>
-              <div class="card-body">
-                <ul id="icons" class="ionicons">
+            <x-stisla.card title="Ion Icons">
+<ul id="icons" class="ionicons">
                   <li class="ion ion-ionic" data-pack="default" data-tags="badass, framework, sexy, hawt"></li>
                   <li class="ion ion-arrow-up-a" data-pack="default" data-tags=""></li>
                   <li class="ion ion-arrow-right-a" data-pack="default" data-tags=""></li>
@@ -755,8 +750,7 @@
                   <li class="ion ion-social-euro" data-pack="social" data-tags="currency, trade, money, europe"></li>
                   <li class="ion ion-social-euro-outline" data-pack="social" data-tags="currency, trade, money, europe"></li>
                 </ul>
-              </div>
-            </div>
+</x-stisla.card>
           </div>
         </section>
 

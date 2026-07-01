@@ -1,15 +1,14 @@
 <div>
 <section class="section">
-          <div class="section-header">
-            <h1>Pagination</h1>
-            <div class="section-header-breadcrumb">
+          <x-stisla.section-header title="Pagination">
+        <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Bootstrap Components</a></div>
               <div class="breadcrumb-item">Pagination</div>
             </div>
-          </div>
+    </x-stisla.section-header>
 
-          <div class="section-body">
+    <div class="section-body">
             <h2 class="section-title">Pagination</h2>
             <p class="section-lead">
               Examples for showing pagination to indicate a series of related content exists across multiple pages.
@@ -17,12 +16,8 @@
 
             <div class="row">
               <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Pagination</h4>
-                  </div>
-                  <div class="card-body">
-                    <nav aria-label="Page navigation example">
+                <x-stisla.card title="Pagination">
+<nav aria-label="Page navigation example">
                       <ul class="pagination">
                         <li class="page-item"><a class="page-link" href="#">Previous</a></li>
                         <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -31,14 +26,9 @@
                         <li class="page-item"><a class="page-link" href="#">Next</a></li>
                       </ul>
                     </nav>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Disabled &amp; Active State</h4>
-                  </div>
-                  <div class="card-body">
-                    <nav aria-label="...">
+</x-stisla.card>
+                <x-stisla.card title="Disabled &amp; Active State">
+<nav aria-label="...">
                       <ul class="pagination">
                         <li class="page-item disabled">
                           <a class="page-link" href="#" tabindex="-1">Previous</a>
@@ -53,16 +43,11 @@
                         </li>
                       </ul>
                     </nav>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
               <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Icon</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="buttons">
+                <x-stisla.card title="Icon">
+<div class="buttons">
                       <nav aria-label="Page navigation example">
                         <ul class="pagination">
                           <li class="page-item">
@@ -83,14 +68,9 @@
                         </ul>
                       </nav>
                     </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Sizing</h4>
-                  </div>
-                  <div class="card-body">
-                    <nav aria-label="...">
+</x-stisla.card>
+                <x-stisla.card title="Sizing">
+<nav aria-label="...">
                       <ul class="pagination pagination-sm">
                         <li class="page-item disabled">
                           <a class="page-link" href="#" tabindex="-1">1</a>
@@ -108,8 +88,7 @@
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
                       </ul>
                     </nav>
-                  </div>
-                </div>
+</x-stisla.card>
               </div>
             </div>
           </div>
